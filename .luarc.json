@@ -1,0 +1,13 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "dw",
+        "inoremap",
+        "fileformat",
+        "set",
+        "unix"
+    ],
+    "diagnostics.disable": [
+        "unused-local"
+    ]
+}
