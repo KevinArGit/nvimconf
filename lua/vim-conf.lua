@@ -90,3 +90,12 @@ map('n', '<Space>bw', '<Cmd>BufferOrderByWindowNumber<CR>', opts)
 -- Other:
 -- :BarbarEnable - enables barbar (enabled by default)
 -- :BarbarDisable - very bad command, should never be used
+
+-- NeoTest mapping
+vim.keymap.set('n', '<leader>mr', '<Cmd>lua require("neotest").run.run()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>ms', '<Cmd>lua require("neotest").run.stop()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mw', '<Cmd>lua require("neotest").watch.watch()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mW', '<Cmd>lua require("neotest").watch.stop()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mo', '<Cmd>lua require("neotest").output.open()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mm', '<Cmd>lua require("neotest").summary.open()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>mM', '<Cmd>lua require("neotest").summary.close()<CR>', { silent = true })
