@@ -22,9 +22,9 @@ vim.wo.number = true
 -- Platformio support for clangd
 vim.api.nvim_create_user_command('Pioclang', function(args)
   if args.fargs[1] == 'update' then
-    os.execute('~/.stuff/platformio/clang-lib.sh')
+    os.execute('~/.config/nvim/scripts/platformio/clang-lib.sh')
   else
-    os.execute('~/.stuff/platformio/clang-init.sh')
+    os.execute('~/.config/nvim/scripts/platformio/clang-init.sh')
     vim.cmd('!' .. 'pio run -t compiledb')
   end
 end, { nargs = '*' })  -- Allow for optional arguments

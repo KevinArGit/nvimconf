@@ -37,9 +37,9 @@ return
           python = ".venv/bin/python",
           -- Returns if a given file path is a test file.
           -- NB: This function is called a lot so don't perform any heavy tasks within it.
-            is_test_file = function(file_path)
-                return string.match(file_path, "(/test/.*)|(test_[^/]+|[^/]+_test)%.py$")
-            end,
+          -- is_test_file = function(file_path)
+              -- return string.match(file_path, "(/test/.*)|(test_[^/]+|[^/]+_test)%.py$")
+          -- end,
           -- !!EXPERIMENTAL!! Enable shelling out to `pytest` to discover test
           -- instances for files containing a parametrize mark (default: false)
           pytest_discover_instances = true,
